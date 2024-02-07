@@ -1,0 +1,16 @@
+{
+	"host": "http://127.0.0.1:3000",
+	"endpoints": [
+		{
+			"path": "/attack-me",
+			"method": "GET",
+			"payload": {
+				"url_param": "example=true&something=false&random=${!RANDOM}"
+			},
+			"headers": {
+				"user-agent": "Firefox"
+			}
+		}
+	],
+	"threads": 100
+}
